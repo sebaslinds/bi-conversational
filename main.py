@@ -28,13 +28,17 @@ def load_summary():
     total_revenue = df["revenue"].sum()
     total_orders = df["orders"].sum()
     avg_basket = round(total_revenue / total_orders, 2)
-    by_month = df.groupby(df["date"].dt.strftime("%Y-%m"))["revenue"].sum().to_dict()
-    by_category = df.groupby("category")["revenue"].sum().to_dict()
-    by_region = df.groupby("region")["revenue"].sum().to_dict()
+    by_month = df.groupby(df["date"].dt.strftime("%Y-%m"))["revenue"].sum()
+    by_month = {k: int(v) for k, v in by_month.items()}
+    by_category = df.groupby("category")["revenue"].sum()
+    by_category = {k: int(v) for k, v in by_category.items()}
+
+    by_region = df.groupby("region")["revenue"].sum()
+    by_region = {k: int(v) for k, v in by_region.items()}
     return {
-        "total_revenue": total_revenue,
-        "total_orders": total_orders,
-        "avg_basket": avg_basket,
+        "total_revenue": int(total_revenue),
+        "total_orders": int(total_orders),
+        "avg_basket": float(avg_basket),
         "revenue_by_month": by_month,
         "revenue_by_category": by_category,
         "revenue_by_region": by_region,
