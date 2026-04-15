@@ -1,0 +1,14 @@
+﻿date,product,category,revenue,orders,region
+2025-01-03,Laptop Pro,Electronique,4200,6,Quebec
+2025-01-10,Chaise Bureau,Mobilier,1800,12,Ontario
+2025-01-15,Ecran 4K,Electronique,3200,8,Quebec
+2025-01-22,Clavier Meca,Electronique,960,16,BC
+2025-02-05,Bureau Debout,Mobilier,2600,10,Ontario
+2025-02-12,Laptop Pro,Electronique,5600,8,Quebec
+2025-02-18,Webcam HD,Electronique,480,20,BC
+2025-02-25,Lampe Bureau,Mobilier,320,14,Ontario
+2025-03-03,Ecran 4K,Electronique,6400,16,Quebec
+2025-03-10,Laptop Pro,Electronique,7000,10,BC
+2025-03-15,Chaise Bureau,Mobilier,900,6,Ontario
+2025-03-20,Clavier Meca,Electronique,1440,24,Quebec
+2025-03-27,Bureau Debout,Mobilier,3900,15,BC
